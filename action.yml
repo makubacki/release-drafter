@@ -23,6 +23,11 @@ inputs:
       The tag name to be associated with the GitHub release that's created or updated.
       This will override any `tag-template` specified in your `release-drafter.yml` if defined.
     required: false
+  tag-prefix:
+    description: |
+      A known prefix used to filter release tags. For matching tags, this prefix is stripped before
+      attempting to parse the version.
+    required: false
   version:
     description: |
       The version to be associated with the GitHub release that's created or updated.
